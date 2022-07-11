@@ -10,6 +10,9 @@
 ul{
     list-style-type: none;
 }
+.fa {
+    font-family: 'FontAwesome'! Important; 
+}
 
 body{
     height: 100vh;
@@ -29,8 +32,10 @@ body{
 .icons{
     display: flex;
     justify-content: space-between;
+    position: relative;
+    z-index: 2;
 }
-.icons li{   
+.icons li>span{   
     display: inline-block;
     text-indent:-300000000px;
 }
@@ -54,6 +59,7 @@ img{
 
 h2{
     text-align: center;
+    color: #4daf54;
     transition: var(--cardTransition)
 }
 .card:hover h2{
