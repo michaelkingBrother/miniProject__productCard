@@ -1,0 +1,140 @@
+:root{
+    --timing: 0.4s;
+    --cardTransition: var(--timing) transform var(--timing);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(to right, #4daf54, #3d8880);
+}
+
+.card
+{
+    width: 320px;
+    height: 400px;
+    background-color: #272d40;
+    border-radius: 15px;
+    margin: calc((100vh - 400px)/2) auto;
+    padding: 20px;
+    color: white;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+}
+.icons li{   
+    display: inline-block;
+    text-indent:-300000000px;
+}
+
+.icons li>i{
+    text-indent: unset;
+}
+.icons li>i:hover{
+    cursor: pointer;
+}
+
+img{
+    max-width: 90%;
+    object-fit: cover;
+    transition: var(--cardTransition)
+}
+
+.card:hover img{
+    transform: translateY(-80px) rotate(-30deg);
+}
+
+h2{
+    text-align: center;
+    transition: var(--cardTransition)
+}
+.card:hover h2{
+    transform: translate(-50px, -60px);
+}
+
+p{
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 38px;
+    transition: var(--cardTransition)
+}
+.card:hover p{
+    transform: translate(-122px, -60px);
+}
+h3{
+    display: inline-block;
+    line-height: 37px;
+}
+.size{
+    display: inline-block;
+}
+.size:hover{
+    cursor: pointer;
+}
+.size li{
+    display: inline-block;
+    background-color: #dadada;
+    padding: 2px 10px;
+    margin: 2px;
+    color: #272d40;
+    border-radius: 5px;
+}
+.color{
+    display: inline-block;
+}
+.color:hover{
+    cursor: pointer;
+}
+.color li{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+    text-indent: -10000000000px;
+}
+#Green{
+    background-color: green;
+}
+#Red{
+    background-color: red;
+}
+#Black{
+    background-color: black;
+}
+
+button{
+    padding: 10px 20px;
+    margin-right: 7px 7px 7px 0px;
+    background-color: #4daf54;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    transition: transform 0.2s
+}
+button:hover{
+    transform: scale(0.8,0.8);
+    cursor: pointer;
+}
+.infor{
+    margin-top: 100px;
+    visibility: hidden;
+    opacity: 0;
+    transition: var(--timing);
+}
+.card:hover .infor{
+    opacity: 100;
+    visibility: visible;
+    margin-top: -10px;
+    transition-delay: var(--timing);
+}
