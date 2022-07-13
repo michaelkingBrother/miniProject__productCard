@@ -66,14 +66,14 @@ h2{
     transform: translate(-50px, -60px);
 }
 
-p{
+.card>p{
     text-align: center;
     font-size: 26px;
     font-weight: 600;
     line-height: 38px;
     transition: var(--cardTransition)
 }
-.card:hover p{
+.card:hover>p{
     transform: translate(-122px, -60px);
 }
 h3{
@@ -143,4 +143,61 @@ button:hover{
     visibility: visible;
     margin-top: -10px;
     transition-delay: var(--timing);
+}
+.footer {
+    padding: 0;
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    right: 50px;
+    width: auto;
+    height: 1px;
+    z-index: 99;
+    display: block;
+}
+.footer .soc-box {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    float: right;
+    width: 24px;
+}
+.follow-label {
+    padding-right: 75px;
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    color: #bbb;
+    font-size: 14px;
+    line-height: 24px;
+    height: 24px;
+    white-space: nowrap;
+    transform-origin: 100% 0;
+    text-align: right;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+.copy a{
+    all: unset;
+    cursor: pointer;
+}
+.follow-label:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 50px;
+    height: 1px;
+    background: rgba(0,0,0,.1);
+}
+.clear {
+    clear: both;
+}
+.footer .soc a {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #bbb;
 }
