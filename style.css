@@ -144,7 +144,9 @@ button:hover{
     margin-top: -10px;
     transition-delay: var(--timing);
 }
-@media only screen and (min-width: 360px){
+
+/* footer css */
+@media only screen and (max-width: 768px){
     .footer>*:not(.copy) {
         display: none;
     }
@@ -152,6 +154,7 @@ button:hover{
         text-align: center;
     }
 }
+
 .footer {
     padding: 0;
     position: fixed;
@@ -175,7 +178,7 @@ button:hover{
     position: absolute;
     bottom: 100%;
     right: 0;
-    color: #bbb;
+    color: var(--textColor);
     font-size: 14px;
     line-height: 24px;
     height: 24px;
@@ -190,6 +193,7 @@ button:hover{
 .copy a{
     all: unset;
     cursor: pointer;
+    color: var(--textColor);
 }
 .follow-label:after {
     content: '';
@@ -207,5 +211,7 @@ button:hover{
     display: block;
     margin-bottom: 20px;
     text-align: center;
-    color: #bbb;
+    color: var(--textColor);
 }
+
+/*end footer css*/
