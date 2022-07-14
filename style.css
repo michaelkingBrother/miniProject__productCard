@@ -144,6 +144,14 @@ button:hover{
     margin-top: -10px;
     transition-delay: var(--timing);
 }
+@media only screen and (min-width: 360px){
+    .footer>*:not(.copy) {
+        display: none;
+    }
+    .copy{
+        text-align: center;
+    }
+}
 .footer {
     padding: 0;
     position: fixed;
